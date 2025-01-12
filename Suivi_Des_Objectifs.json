@@ -50,6 +50,12 @@
         }
     ],
     "note": "Ce fichier est destiné à suivre les objectifs de développement et les progrès réalisés.",
+    "progrès_récents": [
+        {
+            "date": "2025-01-10",
+            "description": "Mise en place du repository GitHub pour faciliter la collaboration.",
+            "détails": "Création du repository public sur GitHub sous le lien https://github.com/ImmoEvotori/Memory."
+        },
     "suivi_financier": {
         "gestion_stockage_finance": "Gestion de la partie stockage et finance par l'utilisateur.",
         "transparence_financiere": "Assurer la transparence et la rigueur financière."
