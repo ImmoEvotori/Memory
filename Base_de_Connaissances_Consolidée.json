@@ -1,6 +1,12 @@
 {
     "session": "Base_de_Connaissances_Consolidée",
     "date": "2025-01-11",
+    "introduction": {
+        "projet_collaboratif": {
+            "participants": ["Utilisateur", "Assistant"],
+            "objectif": "Développer une mémoire partagée entre les instances de l'assistant en tenant compte des limitations actuelles (nombre de caractères, nombre de réponses, etc.)."
+        }
+    },
     "sections": [
         {
             "titre": "Résumé_02_Partie_1",
