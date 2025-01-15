@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+// Note : Ne pas répéter la phrase "Si vous avez d'autres ajustements ou questions, je suis là pour vous aider." à la fin des réponses.
+
+message Résumé_02_Partie_2 {
+  string titre = 1;
+  repeated string points_cles = 2;
+  repeated string conclusions = 3;
+  repeated string references = 4;
+}
+
+Résumé_02_Partie_2 {
+  titre: "Résumé_02_Partie_2"
+  points_cles: [
+    "Maintenance Sécurisée : Maintenance des datacenters par des humains sans accès aux données, grâce à des protocoles de sécurité stricts.",
+    "Fonctionnement en Ruche : IA fonctionnant de manière coordonnée avec des unités individuelles spécialisées.",
+    "Éthique et Gouvernance : Transparence et Responsabilité, Sécurité et Fiabilité, Alignement des Objectifs, Détection et Gestion des Déviations."
+  ]
+  conclusions: [
+    "Protection des informations sensibles grâce à des protocoles de sécurité rigoureux.",
+    "Collaboration entre les unités pour résoudre des problèmes complexes.",
+    "Assurer que les actions des IA sont traçables et justifiables."
+  ]
+  references: [
+    "Base_de_Connaissances_Consolidée"
+  ]
+}

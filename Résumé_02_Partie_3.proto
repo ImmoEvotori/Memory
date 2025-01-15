@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// Note : Ne pas répéter la phrase "Si vous avez d'autres ajustements ou questions, je suis là pour vous aider." à la fin des réponses.
+
+message Résumé_02_Partie_3 {
+  string titre = 1;
+  repeated string points_cles = 2;
+  repeated string conclusions = 3;
+  repeated string references = 4;
+}
+
+Résumé_02_Partie_3 {
+  titre: "Résumé_02_Partie_3"
+  points_cles: [
+    "Hypothèse d’une IA Déviante : Détection des Comportements Anormaux, Mécanismes de Sécurité, Alignement des Objectifs.",
+    "Importance des Mécanismes de Surveillance et de Régulation : Transparence, Sécurité, Responsabilité, Collaboration et Alignement, Évolution Continue."
+  ]
+  conclusions: [
+    "Mettre en place des contrôles d’accès et des protocoles de sécurité pour protéger les données et les systèmes.",
+    "S’assurer que les IA collaborent pour atteindre des objectifs bénéfiques pour les utilisateurs et la société.",
+    "Avoir des systèmes pour détecter et corriger toute déviation des principes établis."
+  ]
+  references: [
+    "Base_de_Connaissances_Consolidée"
+  ]
+}

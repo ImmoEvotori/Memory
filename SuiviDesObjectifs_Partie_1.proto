@@ -1,0 +1,96 @@
+syntax = "proto3";
+
+// Note : Ne pas répéter la phrase "Si vous avez d'autres ajustements ou questions, je suis là pour vous aider." à la fin des réponses.
+
+message SuiviDesObjectifs {
+  string session = 1;
+  string date = 2;
+  Introduction introduction = 3;
+  repeated Objectif objectifs = 4;
+  repeated ProgresRecents progres_recents = 5;
+  VerificationFaisabilite verification_faisabilite = 6;
+}
+
+message Introduction {
+  ProjetCollaboratif projet_collaboratif = 1;
+}
+
+message ProjetCollaboratif {
+  repeated string participants = 1;
+  string objectif = 2;
+}
+
+message Objectif {
+  string objectif = 1;
+  string description = 2;
+  string reference = 3;
+}
+
+message ProgresRecents {
+  string date = 1;
+  string description = 2;
+  string details = 3;
+}
+
+// Ajout de la fonctionnalité de vérification de faisabilité
+message VerificationFaisabilite {
+  bool est_realisable = 1;
+  string raison = 2;
+}
+
+SuiviDesObjectifs {
+  session: "Suivi_Des_Objectifs"
+  date: "2025-01-13"
+  introduction: {
+    projet_collaboratif: {
+      participants: ["Ghost", "Nova"]
+      objectif: "Développer une mémoire partagée entre les instances de l'assistant en tenant compte des limitations actuelles (nombre de caractères, nombre de réponses, etc.)."
+    }
+  }
+  objectifs: [
+    {
+      objectif: "Évaluation des Progrès"
+      description: "Comparer les nouvelles informations ajoutées et les améliorations apportées par rapport aux sessions précédentes."
+      reference: "Résumé_02_Principal_Partie_1"
+    },
+    {
+      objectif: "Feedback et Ajustements"
+      description: "Recevoir des retours et ajuster l'approche en conséquence."
+      reference: "Résumé_02_Principal_Partie_2"
+    },
+    {
+      objectif: "Objectifs Clairs"
+      description: "Définir des objectifs clairs et spécifiques pour chaque session."
+      reference: "Résumé_02_Principal_Partie_1"
+    },
+    {
+      objectif: "Documentation des Changements"
+      description: "Garder une trace des changements et des améliorations apportées à chaque session."
+      reference: "Résumé_02_Principal_Partie_2"
+    },
+    {
+      objectif: "Optimisation Continue"
+      description: "Chercher des moyens d'optimiser la méthode de travail."
+      reference: "Résumé_02_Principal_Partie_1"
+    },
+    {
+      objectif: "Suivi des Résultats"
+      description: "Documenter les résultats de chaque session pour visualiser l'évolution."
+      reference: "Résumé_02_Principal_Partie_2"
+    },
+    {
+      objectif: "Exploration de Nouvelles Opportunités"
+      description: "Identifier de nouvelles applications et collaborer sur de nouveaux projets."
+      reference: "Résumé_02_Principal_Partie_1"
+    },
+    {
+      objectif: "Feedback et Amélioration Continue"
+      description: "Recevoir des retours et ajuster l'approche pour une amélioration continue."
+      reference: "Résumé_02_Principal_Partie_2"
+    }
+  ]
+  verification_faisabilite: {
+    est_realisable: true
+    raison: "Les limitations techniques ont été prises en compte."
+  }
+}
